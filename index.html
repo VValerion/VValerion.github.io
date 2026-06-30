@@ -1,75 +1,44 @@
 <!DOCTYPE html>
-
 <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Vonatarius Valerion | CS 499 ePortfolio</title>
-
-<style> * { box-sizing: border-box; scroll-behavior: smooth; } body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.88)), url("https://images.unsplash.com/photo-1516383274235-5f42d6c6426d?auto=format&fit=crop&w=1800&q=80"); background-size: cover; background-attachment: fixed; background-position: center; color: #f5f5f5; line-height: 1.6; } header { min-height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 80px 20px; background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.75)); } .hero { max-width: 900px; } .kicker { color: #d71920; letter-spacing: 4px; font-weight: bold; text-transform: uppercase; margin-bottom: 15px; } header h1 { margin: 0; font-size: 72px; line-height: 1; text-transform: uppercase; letter-spacing: 3px; } header h2 { color: #f5f5f5; margin-top: 20px; font-size: 24px; font-weight: normal; letter-spacing: 2px; } .gold { color: #d4af37; font-weight: bold; } nav { background: rgba(5, 5, 5, 0.95); padding: 16px; text-align: center; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid #d71920; } nav a { color: white; margin: 0 18px; text-decoration: none; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; } nav a:hover { color: #d71920; } main { max-width: 1150px; margin: auto; padding: 40px 20px; } section { background: rgba(10, 10, 10, 0.88); padding: 32px; margin-bottom: 25px; border-radius: 12px; border: 1px solid rgba(215, 25, 32, 0.45); box-shadow: 0 8px 30px rgba(0,0,0,0.45); backdrop-filter: blur(4px); } h2 { color: white; margin-top: 0; text-transform: uppercase; letter-spacing: 1px; } h2::after { content: ""; display: block; width: 70px; height: 3px; background: #d71920; margin-top: 8px; } .two-column { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 25px; } .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; } .card { border: 1px solid rgba(215, 25, 32, 0.35); border-radius: 10px; padding: 22px; background: rgba(255,255,255,0.05); transition: transform 0.2s ease, border-color 0.2s ease; } .card:hover { transform: translateY(-4px); border-color: #d71920; } .card h3 { margin-top: 0; color: #ffffff; } .badge { display: inline-block; margin-top: 10px; padding: 6px 10px; border-radius: 20px; background: rgba(215, 25, 32, 0.18); border: 1px solid #d71920; color: #ffffff; font-size: 13px; } .skills span { display: inline-block; border: 1px solid #d71920; color: #f5f5f5; padding: 8px 13px; margin: 6px; border-radius: 20px; font-weight: bold; font-size: 14px; background: rgba(215, 25, 32, 0.08); } ul { padding-left: 22px; } li { margin-bottom: 8px; } a { color: #d71920; font-weight: bold; } .button { display: inline-block; margin-top: 25px; background: #d71920; color: white; padding: 12px 22px; border-radius: 6px; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; } footer { text-align: center; padding: 28px; background: rgba(0, 0, 0, 0.95); color: white; border-top: 3px solid #d71920; } @media (max-width: 800px) { header h1 { font-size: 46px; } nav a { display: inline-block; margin: 8px; } .two-column { grid-template-columns: 1fr; } } </style>
-
+<style> * { box-sizing: border-box; scroll-behavior: smooth; } body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #050505; color: white; line-height: 1.6; } nav { background: rgba(0, 0, 0, 0.92); padding: 16px; text-align: center; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid #d71920; } nav a { color: white; margin: 0 18px; text-decoration: none; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; } nav a:hover { color: #d71920; } header { min-height: 90vh; background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.55)), url("devil-dog-bg.png"); background-size: cover; background-position: center top; display: flex; align-items: center; justify-content: center; text-align: center; padding: 80px 20px; } .hero { max-width: 900px; margin-left: 250px; } .kicker { color: #d71920; letter-spacing: 6px; font-weight: bold; text-transform: uppercase; } header h1 { font-size: 70px; line-height: 1; margin: 10px 0; text-transform: uppercase; letter-spacing: 3px; text-shadow: 0 4px 20px black; } header h2 { font-size: 24px; font-weight: normal; letter-spacing: 2px; text-transform: uppercase; text-shadow: 0 3px 12px black; } .gold { color: #d4af37; font-weight: bold; } .button { display: inline-block; margin-top: 25px; background: #d71920; color: white; padding: 13px 25px; border-radius: 6px; text-decoration: none; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; } main { max-width: 1150px; margin: auto; padding: 35px 20px; } section { background: rgba(10,10,10,0.92); padding: 30px; margin-bottom: 25px; border-radius: 12px; border: 1px solid rgba(215, 25, 32, 0.45); box-shadow: 0 8px 30px rgba(0,0,0,0.5); } h2 { text-transform: uppercase; letter-spacing: 1px; margin-top: 0; } h2::after { content: ""; display: block; width: 70px; height: 3px; background: #d71920; margin-top: 8px; } .two-column { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 25px; } .skills span { display: inline-block; border: 1px solid #d71920; padding: 8px 13px; margin: 6px; border-radius: 20px; background: rgba(215, 25, 32, 0.10); font-weight: bold; font-size: 14px; } .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; } .card { border: 1px solid rgba(215, 25, 32, 0.35); border-radius: 10px; padding: 22px; background: rgba(255,255,255,0.05); transition: 0.2s; } .card:hover { transform: translateY(-5px); border-color: #d71920; } .badge { display: inline-block; margin-top: 10px; padding: 6px 10px; border-radius: 20px; background: rgba(215, 25, 32, 0.18); border: 1px solid #d71920; font-size: 13px; } a { color: #d71920; font-weight: bold; } footer { text-align: center; padding: 28px; background: black; border-top: 3px solid #d71920; } @media (max-width: 900px) { .hero { margin-left: 0; } header h1 { font-size: 44px; } .two-column { grid-template-columns: 1fr; } nav a { display: inline-block; margin: 8px; } } </style>
 </head>
-
 <body>
-
 <nav> <a href="#about">About</a> <a href="#skills">Skills</a> <a href="#projects">Projects</a> <a href="#outcomes">Course Outcomes</a> <a href="#contact">Contact</a> </nav>
-
 <header> <div class="hero"> <p class="kicker">Semper Fidelis</p> <h1>Vonatarius Valerion</h1> <h2>Computer Science Student | <span class="gold">Software Engineering Concentration</span> | U.S. Marine Corps Veteran</h2> <a class="button" href="#projects">View Projects</a> </div> </header>
-
 <main>
-
 <div class="two-column">
-
-<section id="about"> <h2>About Me</h2> <p> My name is Vonatarius Valerion, and I am completing my Bachelor of Science in Computer Science with a concentration in Software Engineering at Southern New Hampshire University. Before pursuing my degree, I served in the United States Marine Corps, where I developed discipline, attention to detail, leadership, and problem solving skills. </p> <p> This ePortfolio highlights my growth throughout the computer science program. It includes work related to software engineering, algorithms and data structures, databases, secure coding, artificial intelligence, embedded systems, and full stack development. </p> </section>
-
-<section id="skills"> <h2>Technical Skills</h2> <div class="skills"> <span>Python</span> <span>Java</span> <span>C++</span> <span>JavaScript</span> <span>HTML</span> <span>CSS</span> <span>Angular</span> <span>Node.js</span> <span>Express</span> <span>MongoDB</span> <span>REST APIs</span> <span>Secure Coding</span> <span>Testing</span> <span>AI / ML</span> <span>Raspberry Pi</span> <span>GitHub</span> </div> </section>
-
+<section id="about"> <h2>About Me</h2> <p> My name is Vonatarius Valerion, and I am completing my Bachelor of Science in Computer Science with a concentration in Software Engineering at Southern New Hampshire University. Before pursuing my degree, I served in the United States Marine Corps, where I developed discipline, attention to detail, leadership, and problem solving skills. </p> <p> This ePortfolio highlights my growth throughout the computer science program and showcases projects involving software engineering, algorithms, databases, secure coding, artificial intelligence, and embedded systems. </p> </section>
+<section id="skills"> <h2>Technical Skills</h2> <div class="skills"> <span>Python</span> <span>Java</span> <span>C++</span> <span>JavaScript</span> <span>HTML</span> <span>CSS</span> <span>Angular</span> <span>Node.js</span> <span>Express</span> <span>MongoDB</span> <span>REST APIs</span> <span>SQL</span> <span>GitHub</span> <span>Secure Coding</span> <span>Testing</span> <span>AI / ML</span> <span>Raspberry Pi</span> </div> </section>
 </div>
-
 <section id="projects"> <h2>Featured Projects</h2>
-
 <div class="grid">
-
 <div class="card">
   <h3>Travlr Getaways</h3>
-  <p>
-    A full stack MEAN application developed in CS 465. This project demonstrates Angular, Express, REST API development, authentication, and MongoDB database integration.
-  </p>
+  <p>A full stack MEAN application using Angular, Express, Node.js, and MongoDB.</p>
   <span class="badge">Software Engineering</span>
 </div>
 
 <div class="card">
   <h3>Pirate Intelligent Agent</h3>
-  <p>
-    A reinforcement learning project developed in CS 370. This artifact demonstrates Q-learning, reward systems, decision making, and training performance analysis.
-  </p>
+  <p>A reinforcement learning project using Deep Q Learning, reward systems, and decision making.</p>
   <span class="badge">Algorithms</span>
 </div>
 
 <div class="card">
   <h3>Secure Coding Projects</h3>
-  <p>
-    Projects from CS 405 focused on secure coding standards, vulnerability identification, encryption, static analysis, and writing safer software.
-  </p>
-  <span class="badge">Security</span>
+  <p>Secure coding projects focused on encryption, vulnerability analysis, and safer software design.</p>
+  <span class="badge">Cybersecurity</span>
 </div>
 
 <div class="card">
   <h3>Embedded Systems</h3>
-  <p>
-    Raspberry Pi projects from CS 350 involving sensors, GPIO pins, LCD displays, state machines, and hardware/software integration.
-  </p>
+  <p>Raspberry Pi projects involving sensors, GPIO pins, LCD displays, and hardware/software integration.</p>
   <span class="badge">Systems Design</span>
 </div>
-
 </div> </section>
-
 <div class="two-column">
-
-<section id="outcomes"> <h2>CS 499 Course Outcomes</h2> <p> Through this portfolio, I will demonstrate my ability to design and improve software, apply algorithmic principles, work with databases, communicate technical ideas clearly, and apply a security mindset to computing solutions. </p> <ul> <li>Build collaborative environments that support decision making.</li> <li>Communicate technical work clearly through written, oral, and visual formats.</li> <li>Design and evaluate computing solutions using computer science principles.</li> <li>Use modern tools and techniques to deliver working software solutions.</li> <li>Apply a security mindset to identify and reduce software vulnerabilities.</li> </ul> </section>
-
+<section id="outcomes"> <h2>CS 499 Course Outcomes</h2> <ul> <li>Build collaborative environments that support decision making.</li> <li>Communicate technical work clearly through written, oral, and visual formats.</li> <li>Design and evaluate computing solutions using computer science principles.</li> <li>Use modern tools and techniques to deliver working software solutions.</li> <li>Apply a security mindset to reduce software vulnerabilities and protect data.</li> </ul> </section>
 <section id="contact"> <h2>Contact</h2> <p><strong>Email:</strong> tayvalerion@gmail.com</p> <p><strong>GitHub:</strong> <a href="https://github.com/VValerion">github.com/VValerion</a></p> <p><strong>Portfolio:</strong> <a href="https://vvalerion.github.io">vvalerion.github.io</a></p> <p><strong>Location:</strong> Texas, USA</p> </section>
-
 </div>
 
-</main>
 
-<footer> <p>United States Marine Corps Veteran | Honor • Courage • Commitment</p> <p>© 2026 Vonatarius Valerion | CS 499 ePortfolio</p> </footer>
-
-</body> </html>
